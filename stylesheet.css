@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
     /* Aligning content to the full viewport height of webpage */
 
+
     /* Font Attributes */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.93rem;
@@ -18,44 +19,47 @@ body {
 
     /* Text Attribute */
     color: white;
-    text-align: center;
-    text-wrap: balance;
 
 }
 
 /* Div Classes Layout */
-.c-collumn-preview {
+.collumn-preview {
+    /* Collumns Display Setup */
     display: flex;
     flex-direction: row;
 
-
-    max-width: 30rem;
 }
 
-/* Shared Div Elements */
-.c-sedans-content,
-.c-SUV-content,
-.c-luxury-content {
-
-    padding: 40px;
+/* Master Div */
+.master-column {
+    /* Font and Text */
+    font-size: 0.75rem;
     text-align: left;
-    
+    line-height: 175%;
+
+    /* Content spacing */
+    padding: 40px;
+
+
+    max-width: 9rem;
 }
 
-.c-sedans-content {
+.sedans-content {
     background-color: hsl(31, 77%, 52%);
 
-    
+
 }
 
-.c-SUV-content {
+.SUV-content {
     background-color: hsl(184, 100%, 22%);
 
 
 }
 
-.c-luxury-content {
+.luxury-content {
     background-color: hsl(179, 100%, 13%);
 
 
 }
+
+/* Headers and Paragraphs Setion */
