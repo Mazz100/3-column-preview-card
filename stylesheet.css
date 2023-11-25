@@ -19,35 +19,38 @@ body {
     /* Text Attribute */
     color: white;
     text-align: center;
-    line-height: 1rem;
+    text-wrap: balance;
 
 }
 
 /* Div Classes Layout */
+.c-collumn-preview {
+    display: flex;
+    flex-direction: row;
+
+
+    max-width: 30rem;
+}
 
 /* Shared Div Elements */
 .c-sedans-content,
 .c-SUV-content,
 .c-luxury-content {
 
-    /* Content Formatting */
-    padding: 25px;
+    padding: 40px;
+    text-align: left;
+    
 }
 
 .c-sedans-content {
     background-color: hsl(31, 77%, 52%);
 
-
-
     
-
-
 }
 
 .c-SUV-content {
     background-color: hsl(184, 100%, 22%);
 
-    
 
 }
 
