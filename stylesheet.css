@@ -1,0 +1,18 @@
+
+/* ================ LAYOUT AND DISPLAY SECTION =================== */
+body{
+    
+    background-color: white;
+
+    /* Display Attributes
+
+    /* Font Attributes */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.93rem;
+    font-weight: 500;
+    
+    /* Text Attribute */
+    text-align: center;
+    line-height: 1rem;
+
+}
