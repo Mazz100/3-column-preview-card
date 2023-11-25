@@ -22,26 +22,19 @@ body {
 
 }
 
-/* Div Classes Layout */
-.collumn-preview {
-    /* Collumns Display Setup */
-    display: flex;
-    flex-direction: row;
-
-}
-
 /* Master Div */
 .master-column {
     /* Font and Text */
     font-size: 0.75rem;
     text-align: left;
     line-height: 175%;
+    text-wrap: balance;
 
     /* Content spacing */
     padding: 40px;
 
 
-    max-width: 9rem;
+    max-width: 10rem;
 }
 
 .sedans-content {
@@ -62,4 +55,60 @@ body {
 
 }
 
-/* Headers and Paragraphs Setion */
+/* Content Styling Section */
+.sedans-link {
+    background-color: white;
+
+    /* Text Attributes */
+    text-decoration: none;
+    color: hsl(31, 77%, 52%);
+
+    padding: 10px;
+
+}
+
+.suvs-link {
+    background-color: white;
+
+    /* Text Attributes */
+    text-decoration: none;
+    color: hsl(184, 100%, 22%);
+
+    padding: 10px;
+
+}
+
+.luxury-link {
+    background-color: white;
+
+    /* Text Attributes */
+    text-decoration: none;
+    color: hsl(179, 100%, 13%);
+
+    padding: 10px;
+
+}
+
+
+
+/* Using mediaquery for multiple displays */
+/* Screen size for Mobile */
+@media(max-width:800px) {
+    .collumn-preview {
+        /* Collumns Display Setup */
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+/* Using mediaquery for multiple displays */
+/* Screen size for Desktop */
+@media(min-width:800px) {
+    .collumn-preview {
+        /* Collumns Display Setup */
+        display: flex;
+        flex-direction: row;
+
+    }
+}
