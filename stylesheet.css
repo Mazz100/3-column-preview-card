@@ -1,18 +1,58 @@
-
 /* ================ LAYOUT AND DISPLAY SECTION =================== */
-body{
-    
+body {
+
     background-color: white;
 
-    /* Display Attributes
+    /* Display Attributes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* Aligning content to the full viewport height of webpage */
 
     /* Font Attributes */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.93rem;
     font-weight: 500;
-    
+
     /* Text Attribute */
+    color: white;
     text-align: center;
     line-height: 1rem;
+
+}
+
+/* Div Classes Layout */
+
+/* Shared Div Elements */
+.c-sedans-content,
+.c-SUV-content,
+.c-luxury-content {
+
+    /* Content Formatting */
+    padding: 25px;
+}
+
+.c-sedans-content {
+    background-color: hsl(31, 77%, 52%);
+
+
+
+    
+
+
+}
+
+.c-SUV-content {
+    background-color: hsl(184, 100%, 22%);
+
+    
+
+}
+
+.c-luxury-content {
+    background-color: hsl(179, 100%, 13%);
+
 
 }
