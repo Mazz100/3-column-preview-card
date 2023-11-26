@@ -28,13 +28,13 @@ body {
 .master-column {
 
     /* Content spacing */
-    padding: 40px;
+    padding: 2.875rem;
     max-width: 10rem;
+
 }
 
 .sedans-content {
     background-color: hsl(31, 77%, 52%);
-
 
 }
 
@@ -47,10 +47,17 @@ body {
 .luxury-content {
     background-color: hsl(179, 100%, 13%);
 
-
 }
 
-/* Content Styling Section */
+/* Footer Attribution */
+.attribution {
+    color: #000;
+    font-size: 0.68rem;
+    text-align: center;
+    text-wrap: balance;
+}
+
+/* ===================== Content Styling Section ===================== */
 
 /* Headers and Paragraghs Styling */
 h2 {
@@ -66,69 +73,98 @@ h2 {
     font-size: 0.75rem;
 
     color: rgba(255, 255, 255, 0.6);
-    text-wrap: balance;
-    line-height: 1.2rem;
+    text-wrap: wrap;
+    line-height: 1.25rem;
+
 
     margin-bottom: 5rem;
 
 }
 
+/* Footer Text */
+.attribution p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: normal;
+}
 
+/* =============== Links Styling Section ================ */
 
-/* Links Styling */
-.sedans-link {
+/* Links Text */
+.learn-more-text a {
     background-color: white;
 
     /* Text Attributes */
+    font-family: 'Lexend Deca', sans-serif;
     text-decoration: none;
-    color: hsl(31, 77%, 52%);
+    font-weight: normal;
+    font-size: 0.75rem;
 
-    padding: 10px;
+    padding: 0.75rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    border-radius: 20px;
+}
+
+.sedans-link {
+    color: hsl(31, 77%, 52%);
 
 }
 
 .suvs-link {
-    background-color: white;
-
-    /* Text Attributes */
-    text-decoration: none;
     color: hsl(184, 100%, 22%);
-
-    padding: 10px;
 
 }
 
 .luxury-link {
-    background-color: white;
-
-    /* Text Attributes */
-    text-decoration: none;
     color: hsl(179, 100%, 13%);
 
-    padding: 10px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 
 }
 
 
+/* ================== mediaquery Section ================ */
 
-/* Using mediaquery for multiple displays */
+/* =========== Using mediaquery for multiple displays =============  */
 /* Screen size for Mobile */
 @media(max-width:50rem) {
     .collumn-preview {
         /* Collumns Display Setup */
         display: flex;
         flex-direction: column;
+    }
 
+    /* Adding radius for mobile column display */
+    .sedans-content{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .luxury-content{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 }
 
-/* Using mediaquery for multiple displays */
 /* Screen size for Desktop */
 @media(min-width:50rem) {
     .collumn-preview {
-        /* Collumns Display Setup */
+        /* Row Display Setup */
         display: flex;
         flex-direction: row;
+    }
 
+    /* Adding radius for desktop row display */
+    .sedans-content{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .luxury-content{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 }
