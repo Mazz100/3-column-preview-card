@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
+- Solution URL: https://www.frontendmentor.io/solutions/3column-responsive-layout-challenge-ipFzkapt6L
 - Live Site URL: https://mazz100.github.io/3-column-preview-card/
 
 ## My process
