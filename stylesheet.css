@@ -105,6 +105,7 @@ h2 {
     border-radius: 20px;
 }
 
+/* Anchor Styling and Active states */
 .sedans-link {
     color: hsl(31, 77%, 52%);
 
@@ -125,6 +126,11 @@ h2 {
 
 }
 
+.active-state:hover {
+    color: white;
+    background-color: transparent;
+    border: white solid 2px;
+}
 
 /* ================== mediaquery Section ================ */
 
@@ -138,12 +144,12 @@ h2 {
     }
 
     /* Adding radius for mobile column display */
-    .sedans-content{
+    .sedans-content {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
 
-    .luxury-content{
+    .luxury-content {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
@@ -158,12 +164,12 @@ h2 {
     }
 
     /* Adding radius for desktop row display */
-    .sedans-content{
+    .sedans-content {
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
     }
 
-    .luxury-content{
+    .luxury-content {
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
     }
