@@ -29,6 +29,7 @@ body {
     background-color: white;
     min-height: 100vh;
     /* Aligning content to the full viewport height of webpage */
+    
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -82,7 +83,6 @@ body {
   
     /* Font Attributes */
     font-family: 'Big Shoulders Display', sans-serif;
-    font-size: 1rem;
     font-weight: 700;
 
     /* Text Attribute */
@@ -104,6 +104,8 @@ body {
 .sedans-content {
     background-color: hsl(31, 77%, 52%);
 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .SUV-content {
@@ -115,6 +117,8 @@ body {
 .luxury-content {
     background-color: hsl(179, 100%, 13%);
 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 /* Footer Attribution */
@@ -199,46 +203,25 @@ h2 {
 /* ================== mediaquery Section ================ */
 
 /* =========== Using mediaquery for multiple displays =============  */
-/* Screen size for Mobile */
-@media(max-width:50rem) {
-    .display-preview {
-        /* displays Display Setup */
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* Adding radius for mobile column display */
-    .sedans-content {
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-
-    .luxury-content {
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-
-    .content-text {
-        margin-bottom: 2.5rem;
-    }
-}
-
 /* Screen size for Desktop */
 @media(min-width:50rem) {
     .display-preview {
         /* Row Display Setup */
         display: flex;
         flex-direction: row;
+        overflow: hidden;
     }
 
     /* Adding radius for desktop row display */
     .sedans-content {
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
     }
 
     .luxury-content {
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 0;
     }
 }
